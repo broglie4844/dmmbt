@@ -24,7 +24,7 @@ from utils import Media
 
 logger = logging.getLogger(__name__)
 
-
+username = '@t48444844bot'
 @Client.on_message(filters.command('start'))
 async def start(bot, message):
     if message.from_user.id in info.BANNED_USERS:
