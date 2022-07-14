@@ -69,8 +69,8 @@ async def answer(bot, query):
                            switch_pm_text=switch_pm_text,
                            switch_pm_parameter="okay")
 
-username = '@t48444844bot'
-def get_reply_markup(username, query):
+botusername = '@t48444844bot'
+def get_reply_markup(botusername, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [
         [
