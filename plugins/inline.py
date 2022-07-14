@@ -74,7 +74,7 @@ def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [
         [
-           InlineKeyboardButton('Search Again', switch_inline_query_current_chat='@t48444844bot '),
+           InlineKeyboardButton('Search Again', switch_inline_current_chat='@t48444844bot '),
            InlineKeyboardButton('Share Our Bot', url=url),
         ],
     ]
