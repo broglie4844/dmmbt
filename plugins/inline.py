@@ -70,11 +70,11 @@ async def answer(bot, query):
                            switch_pm_parameter="okay")
 
 
-def get_reply_markup('@t48444844', query):
+def get_reply_markup(username, query):
     url = 't.me/share/url?url=' + quote(SHARE_BUTTON_TEXT.format(username=username))
     buttons = [
         [
-           InlineKeyboardButton('Search Again', switch_inline_query_current_chat=query),
+           #InlineKeyboardButton('Search Again', switch_inline_query_current_chat=query),
            InlineKeyboardButton('Share Our Bot', url=url),
         ],
     ]
